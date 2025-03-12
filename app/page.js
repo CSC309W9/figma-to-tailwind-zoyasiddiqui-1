@@ -1,28 +1,57 @@
 // app/page.js
+
+// name: Zoya Siddiqui
+// utorid: sidd1133
+// student number: 1008888312
+
 export default function Home() {
   return (
-    <div className="w-[1769px] h-[1151px] relative bg-gradient-to-b from-[#db4439] to-[#75241e] overflow-hidden">
-      <div className="w-[150px] h-[52px] left-[1567px] top-[58px] absolute">
-        <div className="w-[150px] h-[52px] left-0 top-0 absolute bg-[#eaecd7] rounded-[49px]" />
-        <div className="left-[50px] top-0 absolute justify-start text-[#db4439] text-base font-black font-['Inknut_Antiqua']">Click</div>
+    <div className="w-full min-h-screen bg-gradient-to-b from-[#db4439] to-[#75241e] overflow-hidden relative px-4 py-8">
+      {/* Header Navigation */}
+      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="flex space-x-8">
+          <div className="text-[#eaecd7] text-lg md:text-2xl font-bold font-['Inknut_Antiqua']">About</div>
+          <div className="text-[#eaecd7] text-lg md:text-2xl font-bold font-['Inknut_Antiqua']">Buy Beanz</div>
+          <div className="text-[#eaecd7] text-lg md:text-2xl font-bold font-['Inknut_Antiqua']">Locations</div>
+        </div>
+        
+        <button className="bg-[#eaecd7] rounded-full px-6 py-2">
+          <span className="text-[#db4439] text-base font-black font-['Inknut_Antiqua']">Login</span>
+        </button>
+      </nav>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto mt-16 md:mt-24 flex flex-col md:flex-row items-center">
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 mb-8 md:mb-0">
+          <h1 className="text-5xl md:text-7xl lg:text-[110px] text-[#eaecd7] font-black font-['Inknut_Antiqua'] leading-tight">
+            Red Beanz
+          </h1>
+          <p className="text-2xl md:text-3xl lg:text-[40px] text-[#eaecd7] font-semibold font-['Inknut_Antiqua'] mt-6">
+            the coolest coffee in town
+          </p>
+        </div>
+        
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 relative">
+          <div className="bg-[#d9d9d9] w-full max-w-lg mx-auto aspect-[543/590] relative transform -rotate-6">
+            <img 
+              className="absolute inset-0 w-full h-full object-cover" 
+              src="https://i.pinimg.com/474x/45/37/07/453707cebd904406fa5e26ca7ed01745.jpg" 
+              alt="Coffee product"
+            />
+          </div>
+        </div>
       </div>
-      <div className="origin-top-left rotate-[-8.64deg] w-[543px] h-[590.40px] left-[1068.69px] top-[226px] absolute">
-        <div className="w-[543px] h-[590.40px] left-[88.69px] top-0 absolute bg-[#d9d9d9]" />
-        <img className="w-[630.99px] h-[1054.71px] left-[81.51px] top-[-57.62px] absolute" src="https://placehold.co/631x1055" />
+      
+      {/* Footer */}
+      <div className="w-full bg-white py-6 mt-16 absolute bottom-0 left-0">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-between px-4">
+          <div className="text-[#db4439] text-xl md:text-2xl font-black font-['Inknut_Antiqua'] my-2">Brand New Drinks</div>
+          <div className="text-[#db4439] text-xl md:text-2xl font-black font-['Inknut_Antiqua'] my-2">Cool Atmospheres</div>
+          <div className="text-[#db4439] text-xl md:text-2xl font-black font-['Inknut_Antiqua'] my-2">Gourmet Grinds</div>
+        </div>
       </div>
-      <div className="w-[680px] left-[143px] top-[313px] absolute justify-start text-[#eaecd7] text-[110px] font-black font-['Inknut_Antiqua'] leading-[134.20px]">This is the Topic This is the Topic</div>
-      <div className="w-[680px] left-[148px] top-[740px] absolute justify-start text-[#eaecd7] text-[40px] font-semibold font-['Inknut_Antiqua'] leading-[48.80px]">This is the Topic </div>
-      <div className="left-[270px] top-[46px] absolute justify-start text-[#eaecd7] text-2xl font-bold font-['Inknut_Antiqua']">Me</div>
-      <div className="left-[64px] top-[46px] absolute justify-start text-[#eaecd7] text-2xl font-bold font-['Inknut_Antiqua']">Front Page</div>
-      <div className="left-[891px] top-[46px] absolute justify-start text-[#eaecd7] text-2xl font-bold font-['Inknut_Antiqua']">ME</div>
-      <div className="left-[965px] top-[46px] absolute justify-start text-[#eaecd7] text-2xl font-bold font-['Inknut_Antiqua']">ME</div>
-      <div className="left-[716px] top-[46px] absolute justify-start text-[#eaecd7] text-2xl font-bold font-['Inknut_Antiqua']">Front Page</div>
-      <div className="w-[1804px] h-[102px] left-[-35px] top-[1049px] absolute bg-white" />
-      <div className="left-[124px] top-[1063px] absolute justify-start text-[#db4439] text-2xl font-black font-['Inknut_Antiqua'] leading-[29.28px]">This is the Topic</div>
-      <div className="left-[459px] top-[1063px] absolute justify-start text-[#db4439] text-2xl font-black font-['Inknut_Antiqua'] leading-[29.28px]">This is the Topic</div>
-      <div className="left-[794px] top-[1063px] absolute justify-start text-[#db4439] text-2xl font-black font-['Inknut_Antiqua'] leading-[29.28px]">This is the Topic</div>
-      <div className="left-[1464px] top-[1063px] absolute justify-start text-[#db4439] text-2xl font-black font-['Inknut_Antiqua'] leading-[29.28px]">This is the Topic</div>
-      <div className="left-[1129px] top-[1063px] absolute justify-start text-[#db4439] text-2xl font-black font-['Inknut_Antiqua'] leading-[29.28px]">This is the Topic</div>
     </div>
   );
 }
